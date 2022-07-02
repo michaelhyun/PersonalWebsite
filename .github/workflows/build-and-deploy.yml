@@ -20,14 +20,14 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ID }}
         aws-region: ${{ env.REGION }}
     - name: Install Dependencies
-      run:
+      run: |
         node --version
         npm ci --production
     - name: Build App
-      run:
+      run: |
         npm run build
     - name: Copy files to S3
-      run:
+      run: |
         aws s3 sync s3://${{ env.BUCKET }}
         aws s3 sync s3://${{ env.SECOND_BUCKET }}
   
