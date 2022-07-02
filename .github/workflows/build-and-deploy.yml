@@ -28,7 +28,7 @@ jobs:
         npm run build
     - name: Copy files to S3
       run: |
-        aws s3 sync ./build s3://${{ env.BUCKET }}
-        aws s3 sync ./build s3://${{ env.SECOND_BUCKET }}
+        aws s3 sync --delete ./build s3://${{ env.BUCKET }}
+        aws s3 sync --delete ./build s3://${{ env.SECOND_BUCKET }}
   
   
