@@ -1,18 +1,17 @@
 import { Facebook, GitHub, Instagram, LinkedIn } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
 import React from 'react'
+import "./sidebar.scss"
 
 export default function Sidebar() {
   return (
-    <div>
+    <div className='sidebar'>
       <div className='sidebar-section'>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Resume</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
+        <button>Home</button>
+        <button>About</button>
+        <button>Resume</button>
+        <button>Portfolio</button>
+        <button>Contact</button>
       </div>
       <div className='social-section'>
         <IconButton>

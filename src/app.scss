@@ -1,5 +1,8 @@
 .app {
     display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     .sidebar {
         height: 100%;
         background-color: blue;
@@ -8,6 +11,9 @@
     .sections {
         display: flex;
         flex-direction: column;
+         > * {
+            height: 500px;
+         }
     }
 }
 

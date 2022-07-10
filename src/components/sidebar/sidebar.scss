@@ -1,0 +1,17 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .sidebar-section {
+        display: flex;
+        flex-direction: column;
+        button {
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+        }
+    }
+
+    .social-section {
+        display: flex;
+    }
+}
