@@ -1,0 +1,13 @@
+.app {
+    display: flex;
+    .sidebar {
+        height: 100%;
+        background-color: blue;
+    }
+    
+    .sections {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

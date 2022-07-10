@@ -1,0 +1,13 @@
+.introduction {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    .title {
+        text-align: center;
+    }
+    img {
+        border-radius: 60px;
+        height: 100px; 
+        width: 100px;
+    }
+}

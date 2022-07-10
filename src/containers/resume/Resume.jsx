@@ -1,7 +1,8 @@
 import React from 'react'
+import "./resume.scss"
 
 export default function Resume() {
   return (
-    <div>Resume</div>
+    <div className='resume'>Resume</div>
   )
 }
